@@ -10,7 +10,7 @@ class RegisTest extends DuskTestCase
 {
     use RefreshDatabase;
 
-    public function user_can_register_successfully()
+    public function testUserCanRegisterSuccessfully()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
